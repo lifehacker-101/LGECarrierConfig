@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carrier_config_list>
+    <carrier_config>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+        <boolean name="enabledMMS" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="6">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="vtims" />
+            <item value="mms" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="6">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="vtims" />
+            <item value="mms" />
+        </string-array>
+    </carrier_config>
+    <carrier_config gid1="31">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+        <boolean name="enabledMMS" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="6">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="vtims" />
+            <item value="mms" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="6">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="vtims" />
+            <item value="mms" />
+        </string-array>
+    </carrier_config>
+    <carrier_config gid1="68">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+        <boolean name="enabledMMS" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="6">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="vtims" />
+            <item value="mms" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="6">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="vtims" />
+            <item value="mms" />
+        </string-array>
+    </carrier_config>
+    <carrier_config gid1="75">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+        <boolean name="enabledMMS" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="6">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="vtims" />
+            <item value="mms" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="6">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="vtims" />
+            <item value="mms" />
+        </string-array>
+    </carrier_config>
+</carrier_config_list>

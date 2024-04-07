@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<carrier_config>
+    <string name="httpParams">X-MDN: 1##LINE1NOCOUNTRYCODE##</string>
+    <string name="uaProfTagName">profile</string>
+    <boolean name="allowAttachAudio" value="true" />
+    <int name="maxMessageSize" value="1048576" />
+    <int name="smsToMmsTextThreshold" value="1" />
+    <boolean name="mmsRoamingAutoRetrieveByDefault" value="true" />
+</carrier_config>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carrier_config_list>
+    <carrier_config>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+    </carrier_config>
+    <carrier_config gid1="33633437">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+    </carrier_config>
+    <carrier_config gid1="4E524A31">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+    </carrier_config>
+    <carrier_config spn="Coriolis">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+    </carrier_config>
+    <carrier_config spn="Orange F">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+    </carrier_config>
+</carrier_config_list>

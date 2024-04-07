@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config>
+<int name="smsToMmsTextThreshold" value="12" />
+<int name="recipientLimit" value="20" />
+<int name="maxMessageSize" value="1048576" />
+<boolean name="enableMultipartSMS" value="false" />
+</carrier_config>

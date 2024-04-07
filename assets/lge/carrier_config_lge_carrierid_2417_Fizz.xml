@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config>
+    <!-- LGE_CALL_FRW_S (Videotron Net_Patch_5322) -->
+    <string-array name="non_roaming_operator_string_array" num="1">
+        <item value="302"/>
+    </string-array>
+    <!-- LGE_CALL_FRW_E (Videotron Net_Patch_5322) -->
+</carrier_config>

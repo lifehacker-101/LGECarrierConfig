@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+<carrier_config>
+    <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, 20200602, dongseon.kim, Set GNSS configuration in the carrierconfig -->
+    <string name="gps.lpp_profile">2</string>
+    <string name="gps.lge_position_mode">0</string>
+    <!--[LGE_GNSS][E] -->
+    <!-- 2020-06-17 IMS configuration [START] -->
+    <boolean name="carrier_volte_available_bool" value="true" />
+    <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    <boolean name="vilte_data_is_metered_bool" value="false" />
+    <boolean name="ignore_rtt_mode_setting_bool" value="false" />
+    <!-- 2020-06-17 IMS configuration [END] -->
+    <int name="recipientLimit" value="10" />
+    <int name="maxSubjectLength" value="40" />
+    <int name="maxMessageTextSize" value="1000" />
+    <boolean name="mmsRoamingAutoRetrieveByDefault" value="true" />
+    <boolean name="enableSMSDeliveryReports" value="false" />
+    <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+    <string name="httpParams">x-vzw-mdn: ##LINE1##</string>
+</carrier_config>
+    <!-- For U.S. Cellular  SPN enable only  -->
+    <carrier_config spn="U.S. Cellular">
+        <string name="browser_homepage_string">https://uscellular.com/mobileportal</string>
+        <string name="uaProfTagName">x-wap-profile</string>
+        <boolean name="enableMMSReadReports" value="false" />
+        <boolean name="enableMultipartSMS" value="false" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="4">
+        <item value="default" />
+        <item value="mms" />
+        <item value="dun" />
+        <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="4">
+        <item value="default" />
+        <item value="mms" />
+        <item value="dun" />
+        <item value="supl" />
+        </string-array>
+    </carrier_config>
+
+</carrier_config_list>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+<carrier_config>
+    <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, 20200602, dongseon.kim, Set GNSS configuration in the carrierconfig -->
+    <string name="gps.es_extension_sec">300</string>
+    <!--[LGE_GNSS][E] -->
+    <int name="smsToMmsTextThreshold" value="5"/>
+
+    <!-- LGE_CALL_FRW_S (BELL Net_Patch_5315) -->
+    <string-array name="non_roaming_operator_string_array" num="1">
+        <item value="302"/>
+    </string-array>
+    <!-- LGE_CALL_FRW_E (BELL Net_Patch_5315) -->
+
+</carrier_config>
+<carrier_config gid1="2C"> <!-- Canada BELL MTS -->
+        <boolean name="enableGroupMms" value="true" />
+        <boolean name="groupChatDefaultsToMMS" value="false"/>
+        <string name="emailGatewayNumber"></string>
+</carrier_config>
+
+</carrier_config_list>

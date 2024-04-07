@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config_list>
+    <carrier_config>
+        <!-- Call F/W [START] -->
+        <string name="carrier_instant_lettering_invalid_chars_string">[\n]</string>
+        <string name="carrier_instant_lettering_escaped_chars_string">"\</string>
+        <!-- Call F/W [END] -->
+    </carrier_config>
+</carrier_config_list>

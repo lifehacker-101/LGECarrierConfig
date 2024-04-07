@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carrier_config_list>
+    <carrier_config>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+    </carrier_config>
+    <carrier_config gid1="52FF">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+    </carrier_config>
+    <carrier_config gid1="53FF">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+    </carrier_config>
+</carrier_config_list>

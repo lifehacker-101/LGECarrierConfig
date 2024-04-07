@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<carrier_config>
+    <!-- Default Carrier Config for VoLTE/VoWiFi [START] -->
+
+    <!-- Flag specifying whether VoLTE should be available for carrier -->
+    <boolean name="carrier_volte_available_bool" value="true"/>
+    <!-- Flag specifying whether VT is available for carrier -->
+    <boolean name="carrier_vt_available_bool" value="true"/>
+
+    <!-- Flag specifying whether provisioning is required for VOLTE : Only NA -->
+    <boolean name="carrier_volte_provisioning_required_bool" value="false"/>
+    <!-- Flag specifying whether VoLTE TTY is supported : Only NA -->
+    <boolean name="carrier_volte_tty_supported_bool" value="false"/>
+
+    <!-- Flag specifying whether IMS service can be turned off -->
+    <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
+
+    <!-- Flag specifying whether Generic Bootstrapping Architecture capable SIM is required for IMS : Not Used -->
+    <boolean name="carrier_ims_gba_required_bool" value="false"/>
+
+    <!-- Flag specifying whether IMS should be the first phone attempted for E911 -->
+    <boolean name="carrier_use_ims_first_for_emergency_bool" value="false"/>
+    <!-- Determines whether video pause signalling is supported : Only KR -->
+    <boolean name="allow_emergency_video_calls_bool" value="false"/>
+
+    <!-- Flag indicating whether to allow carrier video calls to emergency numbers -->
+    <boolean name="support_pause_ims_video_calls_bool" value="false"/>
+
+    <!-- Flag specifying whether WFC over IMS should be available for carrier -->
+    <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+    <!-- Flag specifying whether WFC over IMS supports the "wifi only" option -->
+    <boolean name="carrier_wfc_supports_wifi_only_bool" value="false"/>
+
+    <!-- Default WFC_IMS_mode
+        0: WIFI_ONLY
+        1: CELLULAR_PREFERRED
+        2: WIFI_PREFERRED -->
+    <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+    <!-- Default WFC_IMS_enabled/diabled -->
+    <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+    <!-- Default WFC_IMS_roaming_enabled/disabled -->
+    <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true"/>
+
+    <!-- Only NA -->
+    <boolean name="use_rcs_presence_bool" value="false"/>
+    <boolean name="vilte_data_is_metered_bool" value="false"/>
+    <!-- Default Carrier Config for VoLTE/VoWiFi [END] -->
+
+    <boolean name="enableMultipartSMS" value="true" />
+    <int name="smsToMmsTextThreshold" value="5" />
+    <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, 20200602, dongseon.kim, Set GNSS configuration in the carrierconfig -->
+    <string name="gps.supl_host">supl.vodafone.com</string>
+    <string name="gps.lpp_profile">2</string>
+</carrier_config>

@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+<carrier_config>
+<!-- ACG Nex-Tech Wireless Carrier Script Value -->
+    <string name="name_nam_string">NAM1</string>
+    <string name="pref_voice_so_string">0, 1, 0x0003, 0x0003, 0x0003</string>
+    <string name="sec_code_string">000000</string>
+    <string name="fw_carrier_code_string">19</string>
+    <string name="data_qnc_enabled_string">0</string>
+    <string name="ds_mip_rm_nai_string">MDN@modem.nex-techwireless.com</string>
+    <string name="fw_hotspot_function_enabled_string">1</string>
+    <string name="fw_tether_nai_change_enabled_string">1</string>
+    <string name="mms_auto_receive_string">1</string>
+    <boolean name="enableMMSDeliveryReports" value="false" />
+    <string name="mms_mmsc_address_string">http://mms.ntwls.net/nex-tech/mms.php</string>
+    <string name="mms_mmsc_post_url_string">/nex-tech/mms.php</string>
+    <string name="mms_retry_number_string">3</string>
+    <string name="mms_server_post_cgi_string">?message-id=</string>
+    <string name="mms_gw_ip_string">http://mms.ntwls.net</string>
+    <string name="mms_method_uri_string">/nex-tech/mms.php</string>
+    <string name="mms_hdr_content_type_name_string">Content-Type</string>
+    <string name="mms_hdr_content_type_method_string">1</string>
+    <string name="mms_hdr_user_agent_name_string">User-Agent</string>
+    <string name="mms_hdr_user_agent_method_string">3</string>
+    <string name="mms_hdr_ua_profile_name_string">Profile</string>
+    <string name="mms_hdr_ua_profile_method_string">3</string>
+    <string name="mms_hdr_accept_name_string">Accept</string>
+    <string name="mms_hdr_accept_method_string">2</string>
+    <string name="mms_hdr_accept_language_name_string"></string>
+    <string name="mms_hdr_accept_language_method_string">0</string>
+    <string name="mms_hdr_accept_charset_name_string">Accept-charset</string>
+    <string name="mms_hdr_accept_charset_method_string">2</string>
+    <string name="mms_hdr_accept_encoding_name_string">0</string>
+    <string name="mms_hdr_accept_encoding_method_string">0</string>
+    <string name="mms_hdr_authentication_name_string">X-CS3G-MDN</string>
+    <string name="mms_hdr_authentication_method_string">3</string>
+    <string name="mms_hdr_connection_name_string">Connection</string>
+    <string name="mms_hdr_connection_method_string">3</string>
+    <string name="mms_hdr_proxy_authorization_name_string">Proxy-Authorization</string>
+    <string name="mms_hdr_proxy_authorization_method_string">0</string>
+    <string name="browser_homepage_string">http://www.google.com</string>
+    <string name="voicemail_number_string">MDN</string>
+    <string name="httpParams">MSISDN: 1##LINE1NOCOUNTRYCODE##</string>
+    <string name="uaProfTagName">profile</string>
+    <boolean name="mmsRoamingAutoRetrieveByDefault" value="true" />
+    <int name="smsToMmsTextThreshold" value="-1" />
+    <boolean name="enableMultipartSMS" value="false" />
+    <int name="maxMessageSize" value="1048576" />
+    <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+    <!-- 2020-09-24 IMS (ACG - Appalachian Wireless) [START] -->
+    <boolean name="carrier_volte_available_bool" value="true" />
+    <boolean name="carrier_volte_tty_supported_bool" value="false" />
+    <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+    <boolean name="carrier_use_ims_first_for_emergency_bool" value="false" />
+    <!-- 2020-09-24 IMS (ACG - Appalachian Wireless) [END] -->
+<!-- End ACG Nex-Tech Wireless Carrier Script Value -->
+</carrier_config>
+
+<carrier_config device="mlv7">
+    <string name="uaProfUrl">http://mms.ntwls.net/uaprofs/US601.xml</string>
+</carrier_config>
+<carrier_config device="joan">
+    <string name="uaProfUrl">http://mms.ntwls.net/uaprofs/AS998.xml</string>
+</carrier_config>
+<carrier_config device="judyln">
+    <string name="uaProfUrl">http://mms.ntwls.net/uaprofs/G710ULM.xml</string>
+</carrier_config>
+<carrier_config device="cv7a">
+    <string name="uaProfUrl">http://mms.ntwls.net/uaprofs/Q710ULM.xml</string>
+</carrier_config>
+<carrier_config device="cv1s">
+    <string name="uaProfUrl">http://mms.ntwls.net/uaprofs/X220QMA.xml</string>
+</carrier_config>
+<carrier_config device="falcon">
+    <string name="uaProfUrl">http://mms.ntwls.net/uaprofs/Q850QM.xml</string>
+</carrier_config>
+<carrier_config device="alphalm">
+    <string name="uaProfUrl">http://mms.ntwls.net/uaprofs/G820QM.xml</string>
+</carrier_config>
+<carrier_config device="cv7as">
+    <string name="uaProfUrl">http://mms.ntwls.net/uaprofs/Q720QM.xml</string>
+</carrier_config>
+<carrier_config device="mdh30xlm">
+    <string name="uaProfUrl">http://mms.ntwls.net/uaprofs/K500QM.xml</string>
+</carrier_config>
+<carrier_config device="mdh50lm">
+    <string name="uaProfUrl">http://mms.ntwls.net/uaprofs/Q730QM.xml</string>
+</carrier_config>
+<carrier_config device="mdh5lm">
+    <string name="uaProfUrl">http://mms.ntwls.net/uaprofs/K300QM.xml</string>
+</carrier_config>
+<carrier_config device="mh2lm">
+    <string name="uaProfUrl">http://mms.ntwls.net/uaprofs/G850QM.xml</string>
+</carrier_config>
+</carrier_config_list>

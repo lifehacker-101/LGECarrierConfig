@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+    <carrier_config>
+    <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, 20200602, dongseon.kim, Set GNSS configuration in the carrierconfig -->
+    <string name="gps.supl_host"></string>
+    <string name="gps.supl_ver">0x20002</string>
+    <string name="gps.use_emergency_pdn_for_emergency_supl">1</string>
+    <string name="gps.lge_position_mode">0</string>
+    <!--[LGE_GNSS][E] -->
+
+    <!-- 2020-05-29 yunsik.lee@lge.com LGP_DATA_DATAUSAGE_CONFIG_WARNING_VALUE [START] -->
+    <long name="data_warning_threshold_bytes_long" value="-2" />
+    <!-- 2020-05-29 yunsik.lee@lge.com LGP_DATA_DATAUSAGE_CONFIG_WARNING_VALUE [END] -->
+    <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [START] -->
+    <string-array name="carrier_metered_apn_types_strings" num="4">
+        <item value="default" />
+        <item value="supl" />
+        <item value="dun" />
+        <item value="hipri" />
+    </string-array>
+    <string-array name="carrier_metered_roaming_apn_types_strings" num="6">
+        <item value="default" />
+        <item value="supl" />
+        <item value="dun" />
+        <item value="hipri" />
+        <item value="mms" />
+        <item value="cbs" />
+    </string-array>
+    <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [END] -->
+    <!-- 2019-10-14 CarrierWifi configuration [START] -->
+    <int name="wifi.carrier_profiles_version_int" value="2" />
+    <string-array name="wifi.network_profiles_string_array" num="2">
+        <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;WifiNetwork&gt;&lt;SSID&gt;XFINITY&lt;/SSID&gt;&lt;Credential&gt;&lt;UsernamePassword&gt;&lt;Username&gt;&lt;OuterIdentity&gt;legacy@xfinitymobile.com&lt;/OuterIdentity&gt;&lt;UseICCID&gt;True&lt;/UseICCID&gt;&lt;/Username&gt;&lt;Password&gt;&lt;HashAlgorithm&gt;1&lt;/HashAlgorithm&gt;&lt;UseIMSI&gt;True&lt;/UseIMSI&gt;&lt;/Password&gt;&lt;EAPMethod&gt;&lt;EAPType&gt;21&lt;/EAPType&gt;&lt;InnerMethod&gt;PAP&lt;/InnerMethod&gt;&lt;/EAPMethod&gt;&lt;AAAServerTrustRoot&gt;&lt;DomainNames&gt;aaa.wifi.comcast.com&lt;/DomainNames&gt;&lt;/AAAServerTrustRoot&gt;&lt;/UsernamePassword&gt;&lt;/Credential&gt;&lt;/WifiNetwork&gt;" />
+        <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;WifiNetwork&gt;&lt;SSID&gt;xFi&lt;/SSID&gt;&lt;Credential&gt;&lt;UsernamePassword&gt;&lt;Username&gt;&lt;OuterIdentity&gt;legacy@xfinitymobile.com&lt;/OuterIdentity&gt;&lt;UseICCID&gt;True&lt;/UseICCID&gt;&lt;/Username&gt;&lt;Password&gt;&lt;HashAlgorithm&gt;1&lt;/HashAlgorithm&gt;&lt;UseIMSI&gt;True&lt;/UseIMSI&gt;&lt;/Password&gt;&lt;EAPMethod&gt;&lt;EAPType&gt;21&lt;/EAPType&gt;&lt;InnerMethod&gt;PAP&lt;/InnerMethod&gt;&lt;/EAPMethod&gt;&lt;AAAServerTrustRoot&gt;&lt;DomainNames&gt;aaa.wifi.comcast.com&lt;/DomainNames&gt;&lt;/AAAServerTrustRoot&gt;&lt;/UsernamePassword&gt;&lt;/Credential&gt;&lt;/WifiNetwork&gt;" />
+    </string-array>
+    <!-- 2019-10-14 CarrierWifi configuration [END] -->
+    <!-- 2020-06-09 taegil.kim@lge.com LGP_DATA_DATACONNECTION_RETRY_CONFIG_VZW [START] -->
+    <string-array name="carrier_data_call_retry_config_strings" num="4">
+        <item value="default:default_randomization=0,max_retries=infinite,5000,5000,5000:100,10000:100,10000:100,20000:100,20000:100,30000:100,30000:100,30000:100,60000:100,60000:100,120000:100,120000:100,240000:100" />
+        <item value="emergency:max_retries=8,2000,2000,2000,2000,3000,3000,3000,3000" />
+        <item value="ims:default_randomization=0,max_retries=infinite,5000,5000,5000:100,10000:100,10000:100,20000:100,20000:100,30000:100,30000:100,30000:100,60000:100,60000:100,120000:100,120000:100,240000:100" />
+        <item value="others:default_randomization=0,max_retries=infinite,5000,5000,5000:100,10000:100,10000:100,20000:100,20000:100,30000:100,30000:100,30000:100,60000:100,60000:100,120000:100,120000:100,240000:100" />
+    </string-array>
+    <!-- 2020-06-09 taegil.kim@lge.com LGP_DATA_DATACONNECTION_RETRY_CONFIG_VZW [END] -->
+    <!-- 2020-06-17 IMS configuration [START] -->
+    <boolean name="carrier_volte_available_bool" value="true" />
+    <boolean name="carrier_vt_available_bool" value="true" />
+    <boolean name="carrier_volte_provisioning_required_bool" value="true" />
+    <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+    <boolean name="support_pause_ims_video_calls_bool" value="true" />
+    <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    <int name="carrier_default_wfc_ims_mode_int" value="1" />
+    <boolean name="use_rcs_presence_bool" value="true" />
+    <boolean name="vilte_data_is_metered_bool" value="false" />
+    <boolean name="ignore_rtt_mode_setting_bool" value="false" />
+    <string name="wfc_emergency_address_carrier_app_string">com.google.android.wfcactivation/.VzwEmergencyAddressActivity</string>
+    <!-- 2020-06-17 IMS configuration [END] -->
+    </carrier_config>
+
+<!-- ComCast Value -->
+    <carrier_config gid1="BA01450000000000">
+        <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [START] -->
+        <string-array name="carrier_metered_apn_types_strings" num="5">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="mms" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="6">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="mms" />
+            <item value="cbs" />
+        </string-array>
+        <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [END] -->
+    </carrier_config>
+
+    <!-- LRA Bluegrass Cellular Script Value -->
+    <carrier_config gid1="BA00010000000000">
+        <string name="pref_voice_so_string">0, 1, 0x44, 0x44, 0x44</string>
+        <string name="sec_code_string">000000</string>
+        <string name="data_qnc_enabled_string">0</string>
+        <string name="fw_hotspot_function_enabled_string">1</string>
+        <string name="fw_tether_nai_change_enabled_string">0</string>
+        <string name="mms_auto_receive_string">1</string>
+        <boolean name="enableMMSDeliveryReports" value="true" />
+        <string name="mms_mmsc_address_string">http://m.iot1.com/bluegrass/mms.php</string>
+        <string name="mms_mmsc_post_url_string">/bluegrass/mms.php</string>
+        <string name="mms_retry_number_string">3</string>
+        <string name="mms_server_post_cgi_string">?message-id=</string>
+        <string name="mms_gw_ip_string">http://m.iot1.com</string>
+        <string name="mms_method_uri_string">/bluegrass/mms.php</string>
+        <string name="mms_hdr_content_type_name_string">Content-Type</string>
+        <string name="mms_hdr_content_type_method_string">1</string>
+        <string name="mms_hdr_user_agent_name_string">User-Agent</string>
+        <string name="mms_hdr_user_agent_method_string">3</string>
+        <string name="mms_hdr_ua_profile_name_string">Profile</string>
+        <string name="mms_hdr_ua_profile_method_string">3</string>
+        <string name="mms_hdr_accept_name_string">Accept</string>
+        <string name="mms_hdr_accept_method_string">2</string>
+        <string name="mms_hdr_accept_language_name_string"></string>
+        <string name="mms_hdr_accept_language_method_string">0</string>
+        <string name="mms_hdr_accept_charset_name_string">Accept-charset</string>
+        <string name="mms_hdr_accept_charset_method_string">2</string>
+        <string name="mms_hdr_accept_encoding_name_string"></string>
+        <string name="mms_hdr_accept_encoding_method_string">0</string>
+        <string name="mms_hdr_authentication_name_string">X-DEVICE-MDN</string>
+        <string name="mms_hdr_authentication_method_string">3</string>
+        <string name="mms_hdr_connection_name_string">Connection</string>
+        <string name="mms_hdr_connection_method_string">3</string>
+        <string name="mms_hdr_proxy_authorization_name_string">Proxy-Authorization</string>
+        <string name="mms_hdr_proxy_authorization_method_string">0</string>
+        <string name="fw_carrier_code_string">01</string>
+        <string name="httpParams">X-DEVICE-MDN: 1##LINE1NOCOUNTRYCODE##</string>
+        <string name="uaProfTagName">profile</string>
+        <boolean name="mmsRoamingAutoRetrieveByDefault" value="true" />
+        <int name="smsToMmsTextThreshold" value="1" />
+        <boolean name="enableMultipartSMS" value="true" />
+        <int name="maxMessageSize" value="1048576" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config gid1="BA00010000000000" device="elsa">
+        <string name="uaProfUrl">http://m.iot1.com/uaprofs/lg-us996.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00010000000000" device="b5">
+        <string name="uaProfUrl">http://m.iot1.com/uaprofs/UK750.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00010000000000" device="lucye">
+        <string name="uaProfUrl">http://m.iot1.com/uaprofs/lg-us997.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00010000000000" device="joan">
+        <string name="uaProfUrl">http://m.iot1.com/uaprofs/lg-us998.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00010000000000" device="lv517">
+        <string name="uaProfUrl">http://m.iot1.com/uaprofs/lg-rs501.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00010000000000" device="cv3">
+        <string name="uaProfUrl">http://m.iot1.com/uaprofs/lm-x410ulml.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00010000000000" device="cv7a">
+        <string name="uaProfUrl">http://m.iot1.com/uaprofs/lm-q710ulm.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00010000000000" device="judyln">
+        <string name="uaProfUrl">http://m.iot1.com/uaprofs/lm-g710ulm.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00010000000000" device="falcon">
+        <string name="uaProfUrl">http://m.iot1.com/uaprofs/lm-q850qm.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00010000000000" device="alphalm">
+        <string name="uaProfUrl">http://m.iot1.com/uaprofs/lm-g820qm.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00010000000000" device="cv7as">
+        <string name="uaProfUrl">http://m.iot1.com/uaprofs/lm-q720qm.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00010000000000" device="mdh30xlm">
+        <string name="uaProfUrl">http://m.iot1.com/uaprofs/lm-k500qm.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00010000000000" device="mdh50lm">
+        <string name="uaProfUrl">http://m.iot1.com/uaprofs/lm-q730qm.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00010000000000" device="mdh5lm">
+        <string name="uaProfUrl">http://m.iot1.com/uaprofs/lm-k300qm.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00010000000000" device="mh2lm">
+        <string name="uaProfUrl">http://m.iot1.com/uaprofs/lm-g850qm.xml</string>
+    </carrier_config>
+
+</carrier_config_list>

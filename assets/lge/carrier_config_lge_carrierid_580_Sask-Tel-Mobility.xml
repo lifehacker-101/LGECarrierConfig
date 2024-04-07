@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+<carrier_config>
+    <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [START] -->
+    <string-array name="carrier_metered_apn_types_strings" num="7">
+        <item value="default" />
+        <item value="supl" />
+        <item value="dun" />
+        <item value="hipri" />
+        <item value="mms" />
+        <item value="fota" />
+        <item value="rcs" />
+    </string-array>
+    <string-array name="carrier_metered_roaming_apn_types_strings" num="7">
+        <item value="default" />
+        <item value="supl" />
+        <item value="dun" />
+        <item value="hipri" />
+        <item value="mms" />
+        <item value="fota" />
+        <item value="rcs" />
+    </string-array>
+    <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [END] -->
+    <int name="smsToMmsTextThreshold" value="10" />
+    <int name="maxMessageSize" value="1048576"/>
+    <boolean name="enableMultipartSMS" value="true" />
+    <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, 20200602, dongseon.kim, Set GNSS configuration in the carrierconfig -->
+    <string name="gps.es_extension_sec">300</string>
+    <!--[LGE_GNSS][E] -->
+
+    <!-- LGE_CALL_FRW_S (BELL Net_Patch_5315) -->
+    <string-array name="non_roaming_operator_string_array" num="1">
+        <item value="302"/>
+    </string-array>
+    <!-- LGE_CALL_FRW_E (BELL Net_Patch_5315) -->
+</carrier_config>
+
+    <carrier_config gid1="5A"> <!-- Canada BELL Sasktel -->
+        <boolean name="enableGroupMms" value="true" />
+        <boolean name="groupChatDefaultsToMMS" value="false"/>
+        <string name="emailGatewayNumber"></string>
+        <!-- 2020-09-24 IMS configuration [START] - SKC -->
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+        <!-- 2020-09-24 IMS configuration [END] - SKC  -->
+    </carrier_config>
+
+</carrier_config_list>

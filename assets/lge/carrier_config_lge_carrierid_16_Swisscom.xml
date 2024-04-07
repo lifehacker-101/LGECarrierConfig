@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config>
+     <!-- 2020-10-06 VVM configuration [START]-->
+     <boolean name="config_visual_voice_mail" value="true" />
+     <boolean name="vvm_cellular_data_required_bool" value="true" />
+     <!-- 2020-10-06 VVM configuration [END]-->
+
+     <!-- Carrier Config for Swisscom  -->
+    <boolean name="vvm_prefetch_bool" value="true"/>
+    <boolean name="groupChatDefaultsToMMS" value="false"/>
+</carrier_config>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config>
+    <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [START] -->
+    <string-array name="carrier_metered_apn_types_strings" num="7">
+        <item value="default" />
+        <item value="supl" />
+        <item value="dun" />
+        <item value="hipri" />
+        <item value="mms" />
+        <item value="fota" />
+        <item value="rcs" />
+    </string-array>
+    <string-array name="carrier_metered_roaming_apn_types_strings" num="7">
+        <item value="default" />
+        <item value="supl" />
+        <item value="dun" />
+        <item value="hipri" />
+        <item value="mms" />
+        <item value="fota" />
+        <item value="rcs" />
+    </string-array>
+    <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [END] -->
+    <!-- LGE_CALL_FRW_S (Videotron Net_Patch_5322) -->
+    <string-array name="non_roaming_operator_string_array" num="1">
+        <item value="302"/>
+    </string-array>
+    <!-- LGE_CALL_FRW_E (Videotron Net_Patch_5322) -->
+    <string name="wfc_emergency_address_carrier_app_string">com.google.android.wfcactivation/.WfcActivationCanadaActivity</string>
+    <!-- 2020-07-03 IMS configuration [START] - VTR -->
+    <boolean name="carrier_volte_available_bool" value="true" />
+    <boolean name="carrier_vt_available_bool" value="true" />
+    <boolean name="carrier_volte_tty_supported_bool" value="false" />
+    <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+    <boolean name="ignore_data_enabled_changed_for_video_calls" value="false" />
+    <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    <int name="carrier_default_wfc_ims_mode_int" value="1" />
+    <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="false" />
+    <!-- 2020-07-03 IMS configuration [END] - VTR -->
+</carrier_config>

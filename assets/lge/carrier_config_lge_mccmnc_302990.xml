@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+    <!-- 2020-09-24 IMS configuration [START] - SKC -->
+    <carrier_config gid1="5A">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+
+        <!-- LGE_CALL_FRW_S (BELL Net_Patch_5315) -->
+        <string-array name="non_roaming_operator_string_array" num="1">
+            <item value="302"/>
+        </string-array>
+        <!-- LGE_CALL_FRW_E (BELL Net_Patch_5315) -->
+    </carrier_config>
+    <!-- 2020-09-24 IMS configuration [END] - SKC  -->
+</carrier_config_list>

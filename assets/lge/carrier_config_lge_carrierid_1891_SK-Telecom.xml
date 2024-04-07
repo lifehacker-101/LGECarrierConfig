@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <!-- 2016-06-22 IMS configuration [START] -->
+    <boolean name="carrier_volte_available_bool" value="true" />
+    <boolean name="carrier_vt_available_bool" value="true" />
+    <boolean name="vilte_data_is_metered_bool" value="false"/>
+    <boolean name="carrier_volte_provisioning_required_bool" value="true" />
+    <boolean name="carrier_volte_tty_supported_bool" value="false" />
+    <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+    <boolean name="local_disconnect_empty_ims_conference_bool" value="true" />
+    <boolean name="support_video_conference_call_bool" value="true" />
+    <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+    <boolean name="allow_add_call_during_video_call" value="false" />
+    <boolean name="allow_hold_video_call_bool" value="false" />
+    <boolean name="tty_supported_bool" value="false" />
+    <boolean name="support_wps_over_ims_bool" value="false" />
+    <boolean name="allow_emergency_video_calls_bool" value="true" />
+    <boolean name="carrier_use_ims_first_for_emergency_bool" value="false" />
+    <!-- 2016-06-22 IMS configuration [END] -->
+    <!-- 2017-06-09 hyoseab.song@lge.com LGP_DATA_DATAUSAGE_CONFIG_CYCLEDAY [START] -->
+    <int name="monthly_data_cycle_day_int" value="1" />
+    <!-- 2017-06-09 hyoseab.song@lge.com LGP_DATA_DATAUSAGE_CONFIG_CYCLEDAY [END] -->
+    <!-- 2020-05-29 yunsik.lee@lge.com LGP_DATA_DATAUSAGE_CONFIG_WARNING_VALUE [START] -->
+    <long name="data_warning_threshold_bytes_long" value="6442450944" />
+    <!-- 2020-05-29 yunsik.lee@lge.com LGP_DATA_DATAUSAGE_CONFIG_WARNING_VALUE [END] -->
+    <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [START] -->
+    <string-array name="carrier_metered_apn_types_strings" num="4">
+        <item value="default" />
+        <item value="supl" />
+        <item value="dun" />
+        <item value="hipri" />
+    </string-array>
+    <string-array name="carrier_metered_roaming_apn_types_strings" num="5">
+        <item value="default" />
+        <item value="supl" />
+        <item value="dun" />
+        <item value="hipri" />
+        <item value="mms" />
+    </string-array>
+    <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [END] -->
+    <!-- 2016-06-14 hobbes.song@lge.com LGP_DATA_DATACONNECTION_PSRETRY [START] -->
+    <long name="carrier_data_call_apn_delay_default_long" value="5000" />
+    <long name="carrier_data_call_apn_retry_after_disconnect_long" value="3000" />
+    <string-array name="carrier_data_call_retry_config_strings" num="4">
+        <item value="default:default_randomization=0,max_retries=infinite, 5000,10000,20000,40000,80000:100,160000:100,320000:100,640000:100,1280000:100,1800000:100" />
+        <item value="ims:default_randomization=0,max_retries=infinite, 5000,10000,20000,40000,80000:100,160000:100,320000:100,640000:100,1280000:100,1800000:100" />
+        <item value="emergency:max_retries=0" />
+        <item value="others:max_retries=3, 5000, 5000, 5000" />
+    </string-array>
+    <!-- 2016-06-14 hobbes.song@lge.com LGP_DATA_DATACONNECTION_PSRETRY [END] -->
+    <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, 20200602, dongseon.kim, Set GNSS configuration in the carrierconfig -->
+    <string name="gps.supl_es">0</string>
+    <string name="gps.a_glonass_pos_protocol_select">0xF</string>
+    <!--[LGE_GNSS][E] -->
+    <!-- 2019-11-06 [Start] Wi-Fi EAP-AKA -->
+    <boolean name="allow_metered_network_for_cert_download_bool" value="true"/>
+    <int name="imsi_key_availability_int" value="2" />
+    <string name="imsi_key_download_url_string">https://twifizone.tworld.co.kr/cert/aos</string>
+    <boolean name="enable_eap_method_prefix_bool" value="true"/>
+    <!-- 2019-11-06 [End] Wi-Fi EAP-AKA -->
+</carrier_config>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+<carrier_config>
+<int name="maxMessageSize" value="1048576" />
+</carrier_config>
+<carrier_config gid1="40">
+<boolean name="enableGroupMms" value="true" />
+<boolean name="groupChatDefaultsToMMS" value="false"/>
+<string name="emailGatewayNumber"></string>
+</carrier_config>
+</carrier_config_list>

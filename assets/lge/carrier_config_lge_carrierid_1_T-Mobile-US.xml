@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+    <carrier_config>
+        <!-- 2020-05-29 yunsik.lee@lge.com LGP_DATA_DATAUSAGE_CONFIG_WARNING_VALUE [START] -->
+        <long name="data_warning_threshold_bytes_long" value="21474836480" />
+        <!-- 2020-05-29 yunsik.lee@lge.com LGP_DATA_DATAUSAGE_CONFIG_WARNING_VALUE [END] -->
+        <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [START] -->
+        <string-array name="carrier_metered_apn_types_strings" num="7">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="mms" />
+            <item value="fota" />
+            <item value="rcs" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="7">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="mms" />
+            <item value="fota" />
+            <item value="rcs" />
+        </string-array>
+        <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [END] -->
+        <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, 20200602, dongseon.kim, Set GNSS configuration in the carrierconfig -->
+        <string name="gps.supl_host">supl.geo.t-mobile.com</string>
+        <string name="gps.lpp_profile">2</string>
+        <int name="emergency_sms_mode_timer_ms_int" value="300000" />
+        <!--[LGE_GNSS][E] -->
+        <!-- 2020-06-16 TMUS IMS Configuration [START] -->
+        <boolean name="rtt_supported_bool" value="true"/>
+        <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="carrier_vt_available_bool" value="true"/>
+        <boolean name="carrier_volte_provisioning_required_bool" value="false"/>
+        <boolean name="carrier_volte_tty_supported_bool" value="false"/>
+        <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
+        <boolean name="carrier_ims_gba_required_bool" value="false"/>
+        <boolean name="carrier_use_ims_first_for_emergency_bool" value="true"/>
+        <boolean name="allow_emergency_video_calls_bool" value="false"/>
+        <boolean name="support_pause_ims_video_calls_bool" value="false"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="carrier_wfc_supports_wifi_only_bool" value="false"/>
+        <int name="carrier_default_wfc_ims_mode_int" value="1"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true"/>
+        <boolean name="use_rcs_presence_bool" value="true"/>
+        <boolean name="support_video_conference_call_bool" value="true"/>
+        <!-- 2020-06-16 TMUS IMS Configuration [END] -->
+        <int name="smsToMmsTextThreshold" value="12" />
+        <int name="recipientLimit" value="20" />
+        <int name="maxMessageSize" value="1048576" />
+    </carrier_config>
+    <carrier_config gid1="DEFF">
+        <!-- 2020-09-16 add Tracfone's certifiacates ORD-10490 [START] -->
+        <string-array name="carrier_certificate_string_array" num="3">
+            <item value="E751E163E91E041382839556D31302DB7058C44D9DF1B5B27FC43BD8F0EE2BBA"/>
+            <item value="4AD124DE517BC6BA915B88C17F0AADF764469842156325C26B7CD8B888C41C71"/>
+            <item value="55BB3B316919620008AA76A4891E90384BFF2A76AE95C395FE738C2AC609F13F"/>
+        </string-array>
+        <!-- 2020-09-16 add Tracfone's certifiacates ORD-10490 [END] -->
+    </carrier_config>
+</carrier_config_list>

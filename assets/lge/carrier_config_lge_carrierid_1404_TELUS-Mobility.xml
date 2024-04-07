@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config>
+    <!-- 2020-07-03 IMS configuration [START] - TLS -->
+    <boolean name="carrier_volte_available_bool" value="true" />
+    <boolean name="carrier_volte_tty_supported_bool" value="false" />
+    <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+    <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    <int name="carrier_default_wfc_ims_mode_int" value="1" />
+    <!-- 2020-07-03 IMS configuration [END] - TLS -->
+
+    <!-- 2020-09-16 VVM configuration [START]-->
+    <boolean name="config_visual_voice_mail" value="true" />
+    <boolean name="vvm_cellular_data_required_bool" value="true" />
+    <!-- 2020-09-16 VVM configuration [END]-->
+    <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, 20200602, dongseon.kim, Set GNSS configuration in the carrierconfig -->
+    <string name="gps.es_extension_sec">300</string>
+    <string name="gps.lpp_profile">3</string>
+    <!--[LGE_GNSS][E] -->
+    <string name="wfc_emergency_address_carrier_app_string">com.google.android.wfcactivation/.WfcActivationActivity</string>
+</carrier_config>

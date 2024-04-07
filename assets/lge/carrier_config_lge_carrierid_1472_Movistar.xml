@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<carrier_config>
+    <int name="smsToMmsTextThreshold" value="5" />
+    <int name="maxMessageSize" value="614400"/>
+    <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+    <boolean name="smsEncodingChangeable" value="true" />
+    <boolean name="groupChatDefaultsToMMS" value="false"/>
+    <boolean name="enabledMMS" value="false" />
+</carrier_config>

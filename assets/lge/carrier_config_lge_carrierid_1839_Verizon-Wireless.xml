@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+    <carrier_config>
+        <!-- 2020-05-29 yunsik.lee@lge.com LGP_DATA_DATAUSAGE_CONFIG_WARNING_VALUE [START] -->
+        <long name="data_warning_threshold_bytes_long" value="-2" />
+        <!-- 2020-05-29 yunsik.lee@lge.com LGP_DATA_DATAUSAGE_CONFIG_WARNING_VALUE [END] -->
+        <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [START] -->
+        <string-array name="carrier_metered_apn_types_strings" num="4">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="6">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="mms" />
+            <item value="cbs" />
+        </string-array>
+        <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [END] -->
+        <!-- 2020-06-09 taegil.kim@lge.com LGP_DATA_DATACONNECTION_RETRY_CONFIG_VZW [START] -->
+        <string-array name="carrier_data_call_retry_config_strings" num="4">
+            <item value="default:default_randomization=0,max_retries=infinite,5000,5000,5000:100,10000:100,10000:100,20000:100,20000:100,30000:100,30000:100,30000:100,60000:100,60000:100,120000:100,120000:100,240000:100" />
+            <item value="emergency:max_retries=8,2000,2000,2000,2000,3000,3000,3000,3000" />
+            <item value="ims:default_randomization=0,max_retries=infinite,5000,5000,5000:100,10000:100,10000:100,20000:100,20000:100,30000:100,30000:100,30000:100,60000:100,60000:100,120000:100,120000:100,240000:100" />
+            <item value="others:default_randomization=0,max_retries=infinite,5000,5000,5000:100,10000:100,10000:100,20000:100,20000:100,30000:100,30000:100,30000:100,60000:100,60000:100,120000:100,120000:100,240000:100" />
+        </string-array>
+        <!-- 2020-06-09 taegil.kim@lge.com LGP_DATA_DATACONNECTION_RETRY_CONFIG_VZW [END] -->
+        <!-- LGE_CHANGE_S, [Call_Patch_3024][LGP_CALL_CALL_SS][VZW], 2018-06-21, Support convertCdmaMmiCodesTo3gppMmiCodes { -->
+        <boolean name="convert_cdma_caller_id_mmi_codes_while_roaming_on_3gpp_bool" value="true" />
+        <!-- LGE_CHANGE_E, [Call_Patch_3024][LGP_CALL_CALL_SS][VZW], 2018-06-21, Support convertCdmaMmiCodesTo3gppMmiCodes } -->
+        <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, 20200602, dongseon.kim, Set GNSS configuration in the carrierconfig -->
+        <string name="gps.supl_host"></string>
+        <string name="gps.supl_ver">0x20002</string>
+        <string name="gps.use_emergency_pdn_for_emergency_supl">1</string>
+        <string name="gps.lge_position_mode">0</string>
+        <!--[LGE_GNSS][E] -->
+        <!-- 2020-06-17 IMS configuration [START] -->
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_volte_provisioning_required_bool" value="true" />
+        <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+        <boolean name="support_pause_ims_video_calls_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="use_rcs_presence_bool" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="ignore_rtt_mode_setting_bool" value="false" />
+        <string name="wfc_emergency_address_carrier_app_string">com.google.android.wfcactivation/.VzwEmergencyAddressActivity</string>
+        <!-- 2020-06-17 IMS configuration [END] -->
+        <!-- 2019-11-06 [Start] Wi-Fi EAP-AKA -->
+        <boolean name="allow_metered_network_for_cert_download_bool" value="true"/>
+        <int name="imsi_key_availability_int" value="2" />
+        <string name="imsi_key_download_url_string">https://eap-ide.myvzw.com:8201/certs</string>
+        <boolean name="enable_eap_method_prefix_bool" value="true"/>
+        <!-- 2019-11-06 [End] Wi-Fi EAP-AKA -->
+    </carrier_config>
+    <carrier_config gid1="BAE0000000000000">
+        <int name="smsToMmsTextThreshold" value="3" />
+    </carrier_config>
+</carrier_config_list>

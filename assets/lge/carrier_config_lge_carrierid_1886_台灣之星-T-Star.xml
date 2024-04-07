@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config>
+   <!-- Android message -->
+   <boolean name="enableMultipartSMS" value="true" />
+   <int name="smsToMmsTextThreshold" value="5" />
+</carrier_config>

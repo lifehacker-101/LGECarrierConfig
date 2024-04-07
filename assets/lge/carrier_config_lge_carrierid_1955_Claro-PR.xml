@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config>
+    <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, 20200602, dongseon.kim, Set GNSS configuration in the carrierconfig -->
+    <string name="gps.supl_ver">0x20002</string>
+    <!--[LGE_GNSS][E] -->
+    <!-- MMS max size (bytes) is set according to carrier request. to convert KB * 1024 = bytes -->
+    <int name="maxMessageSize" value="1048576"/>
+    <int name="smsToMmsTextThreshold" value="5" />
+</carrier_config>

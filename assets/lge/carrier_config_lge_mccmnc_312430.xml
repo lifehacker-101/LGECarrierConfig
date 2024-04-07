@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+    <!-- ACG Silver Star Script Value -->
+    <carrier_config>
+        <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, 20200602, dongseon.kim, Set GNSS configuration in the carrierconfig -->
+        <string name="gps.lpp_profile">2</string>
+        <string name="gps.lge_position_mode">0</string>
+        <!--[LGE_GNSS][E] -->
+        <string name="voicemail_number_string">3078806269</string><!--http://mlm.lge.com/di/browse/ORD-10194-->
+    </carrier_config>
+</carrier_config_list>

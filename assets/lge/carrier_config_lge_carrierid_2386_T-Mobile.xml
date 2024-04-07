@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config>
+<!-- MMS discontinued -->
+<boolean name="groupChatDefaultsToMMS" value="false"/>
+<boolean name="enabledMMS" value="false"/>
+</carrier_config>

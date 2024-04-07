@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config>
+    <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [START] -->
+    <string-array name="carrier_metered_apn_types_strings" num="7">
+        <item value="default" />
+        <item value="supl" />
+        <item value="dun" />
+        <item value="hipri" />
+        <item value="mms" />
+        <item value="fota" />
+        <item value="rcs" />
+    </string-array>
+    <string-array name="carrier_metered_roaming_apn_types_strings" num="7">
+        <item value="default" />
+        <item value="supl" />
+        <item value="dun" />
+        <item value="hipri" />
+        <item value="mms" />
+        <item value="fota" />
+        <item value="rcs" />
+    </string-array>
+    <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [END] -->
+    <!-- 2020-07-03 IMS configuration [START] - EST -->
+    <boolean name="carrier_volte_available_bool" value="true" />
+    <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+    <boolean name="carrier_volte_tty_supported_bool" value="false" />
+    <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+    <!-- 2020-07-03 IMS configuration [END] - EST -->
+</carrier_config>

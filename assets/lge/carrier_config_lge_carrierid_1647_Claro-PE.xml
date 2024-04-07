@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Carrier Config for Claro Peru -->
+<carrier_config_list>
+    <carrier_config>
+        <!-- MMS max size (bytes) is set according to carrier request. to convert KB * 1024 = bytes -->
+        <int name="maxMessageSize" value="921600"/>
+        <int name="smsToMmsTextThreshold" value="5" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true"/>
+    </carrier_config>
+</carrier_config_list>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config_list>
+    <carrier_config>
+        <!-- 2016-06-23 IMS configuration [START] -->
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="support_video_conference_call_bool" value="true"/>
+        <boolean name="vilte_data_is_metered_bool" value="false"/>
+        <!-- Flag specifying whether IMS service can be turned off -->
+        <boolean name="carrier_allow_turnoff_ims_bool" value="true"/>
+        <!-- 2016-06-23 IMS configuration [END] -->
+    </carrier_config>
+</carrier_config_list>

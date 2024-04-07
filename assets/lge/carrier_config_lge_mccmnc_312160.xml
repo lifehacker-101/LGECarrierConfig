@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+<!-- LRA Chat Mobility -->
+    <carrier_config gid1="BA00130000000000">
+        <!-- 2020-05-29 yunsik.lee@lge.com LGP_DATA_DATAUSAGE_CONFIG_WARNING_VALUE [START] -->
+        <long name="data_warning_threshold_bytes_long" value="-2" />
+        <!-- 2020-05-29 yunsik.lee@lge.com LGP_DATA_DATAUSAGE_CONFIG_WARNING_VALUE [END] -->
+        <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [START] -->
+        <string-array name="carrier_metered_apn_types_strings" num="5">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="mms" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="5">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="mms" />
+        </string-array>
+        <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [END] -->
+        <!-- 2020-06-09 taegil.kim@lge.com LGP_DATA_DATACONNECTION_RETRY_CONFIG_VZW [START] -->
+        <string-array name="carrier_data_call_retry_config_strings" num="4">
+            <item value="default:default_randomization=0,max_retries=infinite,5000,5000,5000:100,10000:100,10000:100,20000:100,20000:100,30000:100,30000:100,30000:100,60000:100,60000:100,120000:100,120000:100,240000:100" />
+            <item value="emergency:max_retries=8,2000,2000,2000,2000,3000,3000,3000,3000" />
+            <item value="ims:default_randomization=0,max_retries=infinite,5000,5000,5000:100,10000:100,10000:100,20000:100,20000:100,30000:100,30000:100,30000:100,60000:100,60000:100,120000:100,120000:100,240000:100" />
+            <item value="others:default_randomization=0,max_retries=infinite,5000,5000,5000:100,10000:100,10000:100,20000:100,20000:100,30000:100,30000:100,30000:100,60000:100,60000:100,120000:100,120000:100,240000:100" />
+        </string-array>
+        <!-- 2020-06-09 taegil.kim@lge.com LGP_DATA_DATACONNECTION_RETRY_CONFIG_VZW [END] -->
+        <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, 20200602, dongseon.kim, Set GNSS configuration in the carrierconfig -->
+        <string name="gps.lge_position_mode">0</string>
+        <string name="gps.supl_host"></string>
+        <string name="gps.supl_ver">0x20002</string>
+        <string name="gps.use_emergency_pdn_for_emergency_supl">1</string>
+        <!--[LGE_GNSS][E] -->
+        <!-- 2020-06-17 IMS configuration [START] -->
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_volte_provisioning_required_bool" value="true" />
+        <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+        <boolean name="support_pause_ims_video_calls_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="use_rcs_presence_bool" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="ignore_rtt_mode_setting_bool" value="false" />
+        <string name="wfc_emergency_address_carrier_app_string">com.google.android.wfcactivation/.VzwEmergencyAddressActivity</string>
+        <!-- 2020-06-17 IMS configuration [END] -->
+    </carrier_config>
+    <carrier_config gid1="BA00130000000000">
+        <string name="mms_auto_receive_string">1</string>
+        <boolean name="enableMMSDeliveryReports" value="true" />
+        <string name="mms_mmsc_address_string">http://mmsc.hawkeyeswitch.net/mms/</string>
+        <string name="mms_mmsc_post_url_string">/mms/</string>
+        <string name="mms_retry_number_string">3</string>
+        <string name="mms_server_post_cgi_string">?message-id=</string>
+        <string name="mms_gw_ip_string">http://mmsc.hawkeyeswitch.net/mms/</string>
+        <string name="mms_method_uri_string">0</string>
+        <string name="mms_hdr_content_type_name_string">Content-Type</string>
+        <string name="mms_hdr_content_type_method_string">1</string>
+        <string name="mms_hdr_user_agent_name_string">User-Agent</string>
+        <string name="mms_hdr_user_agent_method_string">3</string>
+        <string name="mms_hdr_ua_profile_name_string">Profile</string>
+        <string name="mms_hdr_ua_profile_method_string">3</string>
+        <string name="mms_hdr_accept_name_string">Accept</string>
+        <string name="mms_hdr_accept_method_string">2</string>
+        <string name="mms_hdr_accept_language_name_string"></string>
+        <string name="mms_hdr_accept_language_method_string">0</string>
+        <string name="mms_hdr_accept_charset_name_string">Accept-charset</string>
+        <string name="mms_hdr_accept_charset_method_string">2</string>
+        <string name="mms_hdr_accept_encoding_name_string"></string>
+        <string name="mms_hdr_accept_encoding_method_string">0</string>
+        <string name="mms_hdr_authentication_name_string">X-MDN</string>
+        <string name="mms_hdr_authentication_method_string">3</string>
+        <string name="mms_hdr_connection_name_string">Connection</string>
+        <string name="mms_hdr_connection_method_string">3</string>
+        <string name="mms_hdr_proxy_authorization_name_string">Proxy-Authorization</string>
+        <string name="mms_hdr_proxy_authorization_method_string">0</string>
+        <string name="fw_carrier_code_string">09</string>
+        <string name="httpParams">X-MDN: 1##LINE1NOCOUNTRYCODE##</string>
+        <string name="uaProfTagName">profile</string>
+        <boolean name="mmsRoamingAutoRetrieveByDefault" value="true" />
+        <int name="smsToMmsTextThreshold" value="1" />
+        <boolean name="enableMultipartSMS" value="true" />
+        <int name="maxMessageSize" value="1048576" />
+    </carrier_config>
+
+    <carrier_config gid1="BA00130000000000" device="elsa">
+        <string name="uaProfUrl">http://204.181.155.207/UAProf/LG-US996.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00130000000000" device="b5">
+        <string name="uaProfUrl">http://204.181.155.207/UAProf/UK750.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00130000000000" device="lucye">
+        <string name="uaProfUrl">http://204.181.155.207/UAProf/LG-US997.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00130000000000" device="joan">
+        <string name="uaProfUrl">http://204.181.155.207/UAProf/LG-US998.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00130000000000" device="lv517">
+        <string name="uaProfUrl">http://204.181.155.207/UAProf/LG-RS501.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00130000000000" device="cv3">
+        <string name="uaProfUrl">http://204.181.155.207/UAProf/LM-X410ULML.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00130000000000" device="cv7a">
+        <string name="uaProfUrl">http://204.181.155.207/UAProf/LM-Q710ULM.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00130000000000" device="judyln">
+        <string name="uaProfUrl">http://204.181.155.207/UAProf/LM-G710ULM.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00130000000000" device="falcon">
+        <string name="uaProfUrl">http://204.181.155.207/UAProf/LM-Q850QM.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00130000000000" device="alphalm">
+        <string name="uaProfUrl">http://204.181.155.207/UAProf/LM-G820QM.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00130000000000" device="cv7as">
+        <string name="uaProfUrl">http://204.181.155.207/UAProf/LM-Q720QM.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00130000000000" device="mdh30xlm">
+        <string name="uaProfUrl">http://204.181.155.207/UAProf/LM-K500QM.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00130000000000" device="mdh50lm">
+        <string name="uaProfUrl">http://204.181.155.207/UAProf/LM-Q730QM.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00130000000000" device="mdh5lm">
+        <string name="uaProfUrl">http://204.181.155.207/UAProf/LM-K300QM.xml</string>
+    </carrier_config>
+    <carrier_config gid1="BA00130000000000" device="mh2lm">
+        <string name="uaProfUrl">http://204.181.155.207/UAProf/LM-G850QM.xml</string>
+    </carrier_config>
+</carrier_config_list>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<carrier_config_list>
+    <!-- Tracfone Vzw shows empty string as SPN -->
+    <carrier_config gid1="BA01270000000000">
+        <!--LGP_UICC : block override sim operator alpha  -->
+        <!-- <boolean name="carrier_name_override_bool" value="true" /> -->
+        <string name="carrier_name_string"></string>
+    </carrier_config>
+    <!-- XFINITY Mobile as operator name for Xfinity -->
+    <carrier_config gid1="BA01450000000000">
+        <boolean name="cdma_home_registered_plmn_name_override_bool" value="true" />
+        <string name="cdma_home_registered_plmn_name_string">Xfinity Mobile</string>
+        <!-- 2019-10-14 CarrierWifi configuration [START] -->
+        <int name="wifi.carrier_profiles_version_int" value="1" />
+        <string-array name="wifi.network_profiles_string_array" num="2">
+        <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;WifiNetwork&gt;&lt;SSID&gt;XFINITY&lt;/SSID&gt;&lt;Credential&gt;&lt;UsernamePassword&gt;&lt;Username&gt;&lt;OuterIdentity&gt;legacy@xfinitymobile.com&lt;/OuterIdentity&gt;&lt;UseICCID&gt;True&lt;/UseICCID&gt;&lt;/Username&gt;&lt;Password&gt;&lt;HashAlgorithm&gt;1&lt;/HashAlgorithm&gt;&lt;UseIMSI&gt;True&lt;/UseIMSI&gt;&lt;/Password&gt;&lt;EAPMethod&gt;&lt;EAPType&gt;21&lt;/EAPType&gt;&lt;InnerMethod&gt;PAP&lt;/InnerMethod&gt;&lt;/EAPMethod&gt;&lt;AAAServerTrustRoot&gt;&lt;DomainNames&gt;aaa.wifi.comcast.com&lt;/DomainNames&gt;&lt;/AAAServerTrustRoot&gt;&lt;/UsernamePassword&gt;&lt;/Credential&gt;&lt;/WifiNetwork&gt;" />
+        <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;WifiNetwork&gt;&lt;SSID&gt;xFi&lt;/SSID&gt;&lt;Credential&gt;&lt;UsernamePassword&gt;&lt;Username&gt;&lt;OuterIdentity&gt;legacy@xfinitymobile.com&lt;/OuterIdentity&gt;&lt;UseICCID&gt;True&lt;/UseICCID&gt;&lt;/Username&gt;&lt;Password&gt;&lt;HashAlgorithm&gt;1&lt;/HashAlgorithm&gt;&lt;UseIMSI&gt;True&lt;/UseIMSI&gt;&lt;/Password&gt;&lt;EAPMethod&gt;&lt;EAPType&gt;21&lt;/EAPType&gt;&lt;InnerMethod&gt;PAP&lt;/InnerMethod&gt;&lt;/EAPMethod&gt;&lt;AAAServerTrustRoot&gt;&lt;DomainNames&gt;aaa.wifi.comcast.com&lt;/DomainNames&gt;&lt;/AAAServerTrustRoot&gt;&lt;/UsernamePassword&gt;&lt;/Credential&gt;&lt;/WifiNetwork&gt;" />
+        </string-array>
+        <!-- 2019-10-14 CarrierWifi configuration [END] -->
+    </carrier_config>
+</carrier_config_list>

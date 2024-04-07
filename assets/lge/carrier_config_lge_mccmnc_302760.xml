@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+    <carrier_config>
+        <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [START] -->
+        <string-array name="carrier_metered_apn_types_strings" num="7">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="mms" />
+            <item value="fota" />
+            <item value="rcs" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="7">
+            <item value="default" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+            <item value="mms" />
+            <item value="fota" />
+            <item value="rcs" />
+        </string-array>
+        <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [END] -->
+        <int name="smsToMmsTextThreshold" value="5" />
+        <int name="recipientLimit" value="10" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="maxMessageSize" value="1048576" />
+        <int name="maxImageWidth" value="2592" />
+    </carrier_config>
+    <!-- 2020-07-03 IMS configuration [START] - TLS Jasper -->
+    <carrier_config gid1="5455">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+    </carrier_config>
+    <!-- 2020-07-03 IMS configuration [END] - TLS Jasper -->
+</carrier_config_list>

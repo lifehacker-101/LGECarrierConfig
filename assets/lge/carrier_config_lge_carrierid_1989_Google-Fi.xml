@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carier_config>
+   <!-- [SMS] Turn to MMS when SMS size is more than - Default: 5 (messages) -->
+   <int name="smsToMmsTextThreshold" value="10" />
+   <boolean name="enableMultipartSMS" value="true" />
+</carier_config>

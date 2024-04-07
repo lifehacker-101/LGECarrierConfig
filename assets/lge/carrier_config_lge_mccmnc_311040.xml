@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+    <!-- ACG Choice Wireless Script Value -->
+    <!-- Currently, the same PRI value is applied to both operators. if necessary, Separate with the GID information below  -->
+    <!-- Choice Wireless GID1 : "FFFFFFFF" or "FF01FFFF" -->
+    <!-- Viya GID1 : "05FFFFFF" -->
+    <carrier_config>
+        <string name="voicemail_number_string">7754030245</string>
+        <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, 20200602, dongseon.kim, Set GNSS configuration in the carrierconfig -->
+        <string name="gps.lpp_profile">2</string>
+        <string name="gps.lge_position_mode">0</string>
+        <!--[LGE_GNSS][E] -->
+    </carrier_config>
+    <!-- Viya GID1 : "05FFFFFF" -->
+    <carrier_config gid1="05FFFFFF">
+        <string name="voicemail_number_string">3407719001</string>
+    </carrier_config>
+</carrier_config_list>

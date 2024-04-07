@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config>
+   <int name="maxMessageSize" value="614400" />
+   <boolean name="smsUsesSimpleCharactersOnly" value="true"/>
+   <boolean name="smsEncodingChangeable" value="true"/>
+</carrier_config>

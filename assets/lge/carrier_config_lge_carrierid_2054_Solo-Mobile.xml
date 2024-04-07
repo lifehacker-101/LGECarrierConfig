@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+<carrier_config>
+<int name="maxMessageSize" value="1048576" />
+
+    <!-- LGE_CALL_FRW_S (BELL Net_Patch_5315) -->
+    <string-array name="non_roaming_operator_string_array" num="1">
+        <item value="302"/>
+    </string-array>
+    <!-- LGE_CALL_FRW_E (BELL Net_Patch_5315) -->
+</carrier_config>
+
+<carrier_config gid1="3f">
+<boolean name="enableGroupMms" value="true" />
+<boolean name="groupChatDefaultsToMMS" value="false"/>
+<string name="emailGatewayNumber"></string>
+</carrier_config>
+
+</carrier_config_list>

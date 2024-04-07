@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+    <carrier_config>
+
+        <!-- 2018-06-26 jewon.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [START] -->
+        <string-array name="carrier_metered_apn_types_strings" num="5">
+            <item value="default" />
+            <item value="mms" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="5">
+            <item value="default" />
+            <item value="mms" />
+            <item value="supl" />
+            <item value="dun" />
+            <item value="hipri" />
+        </string-array>
+        <!-- 2018-06-26 jewon.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [END] -->
+
+        <!-- 2018-06-26 jewon.lee@lge.com LGP_DATA_DATACONNECTION_RETRY_CONFIG_SB [START] -->
+        <long name="carrier_data_call_apn_retry_after_disconnect_long" value="3000" />
+        <string-array name="carrier_data_call_retry_config_strings" num="4">
+            <item value="default:default_randomization=0,max_retries=infinite, 5000,10000,20000,40000,80000:100,160000:100,320000:100,640000:100,1280000:100,1800000:100" />
+            <item value="ims:default_randomization=0,max_retries=infinite, 300000:100,600000:100,1800000:100,3600000:100,21600000:100,43200000:100,86400000:100" />
+            <item value="emergency:max_retries=0" />
+            <item value="others:max_retries=3, 5000, 5000, 5000" />
+        </string-array>
+        <!-- 2018-06-26 jewon.lee@lge.com LGP_DATA_DATACONNECTION_RETRY_CONFIG_SB [END] -->
+        <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, 20200602, dongseon.kim, Set GNSS configuration in the carrierconfig -->
+        <string name="gps.supl_host">dcm-supl.com</string>
+        <string name="gps.lpp_profile">2</string>
+        <string name="gps.a_glonass_pos_protocol_select">0xA</string>
+        <string name="gps.es_extension_sec">300</string>
+        <!--[LGE_GNSS][E] -->
+    </carrier_config>
+</carrier_config_list>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+	<carrier_config>
+    <!-- 2020-06-16 TMUS IMS Configuration [START] -->
+    <boolean name="rtt_supported_bool" value="true"/>
+    <boolean name="carrier_volte_available_bool" value="true"/>
+    <boolean name="carrier_vt_available_bool" value="false"/>
+    <boolean name="carrier_volte_provisioning_required_bool" value="false"/>
+    <boolean name="carrier_volte_tty_supported_bool" value="false"/>
+    <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
+    <boolean name="carrier_ims_gba_required_bool" value="false"/>
+    <boolean name="carrier_use_ims_first_for_emergency_bool" value="true"/>
+    <boolean name="allow_emergency_video_calls_bool" value="false"/>
+    <boolean name="support_pause_ims_video_calls_bool" value="false"/>
+    <boolean name="carrier_wfc_ims_available_bool" value="false"/>
+    <boolean name="carrier_wfc_supports_wifi_only_bool" value="false"/>
+    <int name="carrier_default_wfc_ims_mode_int" value="1"/>
+    <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
+    <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="false"/>
+    <boolean name="use_rcs_presence_bool" value="false"/>
+    <boolean name="support_video_conference_call_bool" value="false"/>
+    <!-- 2020-06-16 TMUS IMS Configuration [END] -->
+    <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, 20200602, dongseon.kim, Set GNSS configuration in the carrierconfig -->
+    <string name="gps.supl_host">supl.geo.t-mobile.com</string>
+    <string name="gps.lpp_profile">2</string>
+    <int name="emergency_sms_mode_timer_ms_int" value="300000" />
+    <!--[LGE_GNSS][E] -->
+	</carrier_config>
+
+	<carrier_config>
+    <int name="maxMessageSize" value="1048576" />
+    <boolean name="enableMultipartSMS" value="false" />
+	</carrier_config>
+</carrier_config_list>

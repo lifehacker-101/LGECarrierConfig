@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config>
+    <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [START] -->
+    <string-array name="carrier_metered_apn_types_strings" num="7">
+        <item value="default" />
+        <item value="supl" />
+        <item value="dun" />
+        <item value="hipri" />
+        <item value="mms" />
+        <item value="fota" />
+        <item value="rcs" />
+    </string-array>
+    <string-array name="carrier_metered_roaming_apn_types_strings" num="7">
+        <item value="default" />
+        <item value="supl" />
+        <item value="dun" />
+        <item value="hipri" />
+        <item value="mms" />
+        <item value="fota" />
+        <item value="rcs" />
+    </string-array>
+    <!-- 2020-06-04 yunsik.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [END] -->
+
+    <!-- 2020-07-03 IMS configuration [START] - WIND -->
+    <boolean name="carrier_volte_available_bool" value="true" />
+    <boolean name="carrier_volte_tty_supported_bool" value="false" />
+    <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+    <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="false" />
+    <!-- 2020-07-03 IMS configuration [END] - WIND -->
+    <!-- 2020-12-16 [Start] Wi-Fi EAP-AKA -->
+    <boolean name="allow_metered_network_for_cert_download_bool" value="true"/>
+    <int name="imsi_key_availability_int" value="2" />
+    <string name="imsi_key_download_url_string">https://wifiaccess.shaw.ca/gc</string>
+    <boolean name="enable_eap_method_prefix_bool" value="false"/>
+    <!-- 2020-12-16 [End] Wi-Fi EAP-AKA -->
+    <string name="wfc_emergency_address_carrier_app_string">com.google.android.wfcactivation/.WfcActivationCanadaActivity</string>
+</carrier_config>

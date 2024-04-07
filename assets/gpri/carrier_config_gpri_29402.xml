@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carrier_config_list>
+    <carrier_config>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+    </carrier_config>
+    <carrier_config imsi="294020001xxxxxx">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+        <int name="smsToMmsTextThreshold" value="-1" />
+        <int name="maxMessageSize" value="307200" />
+    </carrier_config>
+    <carrier_config imsi="294020002xxxxxx">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+        <int name="smsToMmsTextThreshold" value="-1" />
+        <int name="maxMessageSize" value="307200" />
+    </carrier_config>
+    <carrier_config imsi="294020004xxxxxx">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+        <int name="smsToMmsTextThreshold" value="-1" />
+        <int name="maxMessageSize" value="307200" />
+    </carrier_config>
+    <carrier_config imsi="294020007xxxxxx">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+        <int name="smsToMmsTextThreshold" value="-1" />
+        <int name="maxMessageSize" value="307200" />
+    </carrier_config>
+</carrier_config_list>

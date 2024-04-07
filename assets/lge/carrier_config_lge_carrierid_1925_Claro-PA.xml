@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config>
+   <!-- MMS max size (bytes) is set according to carrier request. to convert KB * 1024 = bytes -->
+   <int name="maxMessageSize" value="307200"/>
+   <int name="smsToMmsTextThreshold" value="5" />
+   <boolean name="groupChatDefaultsToMMS" value="false"/>
+</carrier_config>

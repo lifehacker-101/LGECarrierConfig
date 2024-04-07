@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config>
+    <!-- LGE_CHANGE_S, [Call_Patch_6306][LGP_CALL_CALL_CC][SBM], 2018-06-22, SBM_EXTEND OTR-Voice-011019 DTMF gap time { -->
+    <int name="gsm_dtmf_tone_delay_int" value="215"/>
+    <!-- LGE_CHANGE_E, [Call_Patch_6306][LGP_CALL_CALL_CC][SB<], 2018-06-22, SBM_EXTEND OTR-Voice-011019 DTMF gap time } -->
+
+    <!-- 2018-06-26 jewon.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [START] -->
+    <string-array name="carrier_metered_apn_types_strings" num="5">
+        <item value="default" />
+        <item value="mms" />
+        <item value="supl" />
+        <item value="dun" />
+        <item value="hipri" />
+    </string-array>
+    <string-array name="carrier_metered_roaming_apn_types_strings" num="5">
+        <item value="default" />
+        <item value="mms" />
+        <item value="supl" />
+        <item value="dun" />
+        <item value="hipri" />
+    </string-array>
+    <!-- 2018-06-26 jewon.lee@lge.com LGP_DATA_APN_DATA_USAGE_DEFAULT_CONFIG [END] -->
+
+    <!-- 2018-06-26 jewon.lee@lge.com LGP_DATA_DATACONNECTION_RETRY_CONFIG_SB [START] -->
+    <long name="carrier_data_call_apn_retry_after_disconnect_long" value="3000" />
+    <string-array name="carrier_data_call_retry_config_strings" num="4">
+        <item value="default:default_randomization=0,max_retries=infinite, 5000,10000,20000,40000,80000:100,160000:100,320000:100,640000:100,1280000:100,1800000:100" />
+        <item value="ims:default_randomization=0,max_retries=infinite, 300000:100,600000:100,1800000:100,3600000:100,21600000:100,43200000:100,86400000:100" />
+        <item value="emergency:max_retries=0" />
+        <item value="others:max_retries=3, 5000, 5000, 5000" />
+    </string-array>
+    <!-- 2018-06-26 jewon.lee@lge.com LGP_DATA_DATACONNECTION_RETRY_CONFIG_SB [END] -->
+
+    <!-- 2020-06-23 SB IMS Configuration [START] -->
+    <boolean name="carrier_volte_available_bool" value="true" />
+    <boolean name="carrier_rcs_provisioning_required_bool" value="false"/>
+    <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+    <boolean name="carrier_volte_tty_supported_bool" value="false" />
+    <boolean name="carrier_ims_gba_required_bool" value="false"/>
+    <boolean name="local_disconnect_empty_ims_conference_bool" value="true"/>
+    <boolean name="allow_hold_call_during_emergency_bool" value="false"/>
+    <boolean name="tty_supported_bool" value="false"/>
+    <boolean name="support_wps_over_ims_bool" value="false"/>
+    <boolean name="carrier_use_ims_first_for_emergency_bool" value="false"/>
+    <!-- 2020-06-23 SB IMS Configuration [END] -->
+    <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, 20200602, dongseon.kim, Set GNSS configuration in the carrierconfig -->
+    <string name="gps.lge_position_mode">0</string>
+    <string name="gps.lpp_profile">0</string>
+    <string name="gps.es_extension_sec">300</string>
+    <!--[LGE_GNSS][E] -->
+</carrier_config>

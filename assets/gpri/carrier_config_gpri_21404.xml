@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carrier_config_list>
+    <carrier_config>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+        <boolean name="enabledMMS" value="false" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <int name="smsToMmsTextThreshold" value="-1" />
+        <int name="maxMessageSize" value="307200" />
+    </carrier_config>
+    <carrier_config imsi="2140423xxxxxxxx">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+        <boolean name="enabledMMS" value="false" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <int name="smsToMmsTextThreshold" value="-1" />
+        <int name="maxMessageSize" value="307200" />
+    </carrier_config>
+    <carrier_config imsi="2140426xxxxxxxx">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+        <boolean name="enabledMMS" value="false" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <int name="smsToMmsTextThreshold" value="-1" />
+        <int name="maxMessageSize" value="307200" />
+    </carrier_config>
+    <carrier_config imsi="214045xxxxxxxxx">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+        <boolean name="enabledMMS" value="false" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <int name="smsToMmsTextThreshold" value="-1" />
+        <int name="maxMessageSize" value="307200" />
+    </carrier_config>
+</carrier_config_list>

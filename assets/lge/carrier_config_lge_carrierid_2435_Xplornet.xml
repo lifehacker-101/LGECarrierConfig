@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<carrier_config_list>
+<carrier_config>
+<int name="maxImageHeight" value="1944" />
+<int name="maxMessageSize" value="1048576" />
+<int name="maxImageWidth" value="2592" />
+<!-- 2020-12-04 IMS configuration [START] - XPM -->
+<boolean name="carrier_volte_available_bool" value="true" />
+<boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+<boolean name="carrier_volte_tty_supported_bool" value="false" />
+<boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+<!-- 2020-12-04 IMS configuration [END] - XPM -->
+
+    <!-- LGE_CALL_FRW_S (Xplornet Net_Patch_5329) -->
+    <string-array name="non_roaming_operator_string_array" num="1">
+        <item value="302"/>
+    </string-array>
+    <!-- LGE_CALL_FRW_E (Xplornet Net_Patch_5329) -->
+</carrier_config>
+</carrier_config_list>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+<int name="smsToMmsTextThreshold" value="-1" />
+<boolean name="smsUsesSimpleCharactersOnly" value="true"/>
+<boolean name="enabledMMS" value="false" />
+    <!--[LGE_GNSS][S]LGP_GNSS_R_0002, LGP_GNSS_SET_CONFIGURATION_CARRIERCONFIG, Set GNSS configuration in the carrierconfig  Entel Peru -->
+    <string name="gps.lpp_profile">0</string>
+    <!--[LGE_GNSS][E] -->
+</carrier_config>
